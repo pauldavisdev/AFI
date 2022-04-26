@@ -13,6 +13,6 @@ namespace Core.Dtos
         public string Surname { get; set; }
         public DateTime? DOB { get; set; }
         public string? Email { get; set; }
-        public int PolicyReferenceNumber { get; set; }
+        public string PolicyReferenceNumber { get; set; }
     }
 }

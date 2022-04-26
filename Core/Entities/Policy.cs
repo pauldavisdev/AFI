@@ -9,6 +9,7 @@ namespace Core.Entities
     public class Policy
     {
         public int PolicyId { get; set; }
+        public string PolicyReference { get; set; }
         public Customer Customer { get; set; }
     }
 }
