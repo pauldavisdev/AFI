@@ -10,6 +10,6 @@ With more time I would have:
 - Added logging
 - Added more exceptions for errors beyond just validation (e.g. 404 not found)
 
-For this test I tried to go for a 'clean architecture' approach based on some reading and exercises that I have been looking at recently. See the template https://github.com/jasontaylordev/CleanArchitecture
+For this test I tried to go for a 'clean architecture' approach based on some reading and exercises that I have been looking at recently. A template that I have been working with lately https://github.com/jasontaylordev/CleanArchitecture, but did not use for this as it was a bit overkill.
 
 There is also a lack of comments, however I have tried to use meaningful names and in my opinion any comments that I would add would not add much value to such a simple app.
