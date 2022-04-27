@@ -1,5 +1,5 @@
 using Core.Dtos;
-using Core.Entities;
+using Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
@@ -8,10 +8,18 @@ namespace WebAPI.Controllers
     [Route("[controller]")]
     public class PortalAccountController : ControllerBase
     {
-        [HttpPost]
-        public async Task<ActionResult<int>> Create([FromBody] RegistrationDetailDto registrationDetail)
+        private CustomerService _customerService;
+
+        public PortalAccountController(CustomerService customerService)
         {
-            throw new NotImplementedException();
+            _customerService = customerService;
         }
+
+        [HttpPost]
+        public async Task<ActionResult<int>> Create(RegistrationDetailDto registrationDetail)
+        {
+            return await _customerService.AddCustomer(registrationDetail);           
+        }
+
     }
 }
